@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donation Impact Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="wrapper">
+    <h1>🌿 Jamuna Foundation 🌿</h1>
+    <h2>Donation Impact Calculator</h2>
+
+    <div class="calc-box">
+      <input type="text" id="inputScreen" placeholder="Enter donation amount" readonly />
+
+      <div class="keypad">
+        <button onclick="insertNum(7)">7</button>
+        <button onclick="insertNum(8)">8</button>
+        <button onclick="insertNum(9)">9</button>
+        <button onclick="addOperator('+')">+</button>
+
+        <button onclick="insertNum(4)">4</button>
+        <button onclick="insertNum(5)">5</button>
+        <button onclick="insertNum(6)">6</button>
+        <button onclick="addOperator('-')">−</button>
+
+        <button onclick="insertNum(1)">1</button>
+        <button onclick="insertNum(2)">2</button>
+        <button onclick="insertNum(3)">3</button>
+        <button onclick="addOperator('*')">×</button>
+
+        <button onclick="insertNum(0)">0</button>
+        <button onclick="insertDot()">.</button>
+        <button onclick="addOperator('/')">÷</button>
+        <button onclick="resetDisplay()" style="background-color: greenyellow;">Clear</button>
+
+        <button class="btn-calc" onclick="solveExpression()">Calculate</button>
+        <button class="btn-impact" onclick="showImpact()">Impact</button>
+      </div>
+
+      <p id="outputText"></p>
+    </div>
+
+    <footer>
+      <p class="tagline">“Every rupee plants hope — join the green change 🌱”</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
